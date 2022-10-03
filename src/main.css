@@ -303,10 +303,6 @@
 
 @media screen and (max-width: 800px) {
 
-    #title {
-        
-    }
-
     #role {
         text-align: center;
         font-size: 20px;
@@ -531,6 +527,7 @@ h2 {
     width: 75%;
     margin: auto;
     align-items: center;
+    justify-content: space-around;
 }
 
 #productmodel_pic {
@@ -550,18 +547,35 @@ h2 {
 #three_js_demo {
     flex-direction: row-reverse;
     text-align: right;
+    margin-bottom: 50px;
 }
 
-#wtf {
+#UXCase1 {
     flex-direction: row-reverse;
     text-align: right;
-    align-items: right;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
+#todolist {
+    margin-bottom: 50px;
+}
+
+#tea_cozy_pic {
+    margin-left: 75px;
+    height: 20vw;
+    width: auto;
+}
+
+/* #wtf {
+    flex-direction: row;
+    text-align: left;
+    align-items: right;
+}
+*/ 
 #weather {
     flex-direction: row-reverse;
     text-align: right;
-
 }
 
 .projectinfo {
@@ -576,14 +590,12 @@ h2 {
 .projectmockup_img {
     height: 25vw;
     width: auto;
-    margin-left: 100px;
 }
 
 .projectmockup_img2 {
     height: 30vw;
     width: auto;
-    margin-left: 50px;
-}
+} 
 
 h4 {
     font-size: 26px;
@@ -649,6 +661,16 @@ button:hover {
         text-align: center;
         align-items: center;
     }
+
+    #UXCase1 {
+        flex-direction: column;
+    }
+
+    #tea_cozy_pic {
+        margin: 0 auto;
+        height: 30vw;
+    }
+
 
     #weather {
         flex-direction: column;

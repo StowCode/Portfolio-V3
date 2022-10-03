@@ -1,0 +1,119 @@
+
+* {
+    background-color: rgb(22,22,22);
+    color: white;
+    font-family: Arial;
+}
+
+#back_button {
+    font-family: Arial;
+    font-size: 20px;
+    position: fixed;
+    top: 125px;
+    background-color: rgb(22,22,22);
+    backdrop-filter: blur(5px);
+}
+
+#back_button h5 {
+    color: rgb(51, 255, 0);
+    margin-left: 10px;
+}
+
+#case_study_header {
+    color: white;
+    font-size: 50px;
+    font-family: 'Vujahday Script', sans-serif;
+    text-align: center;
+    margin-top: 75px;
+}
+
+#case_study {
+    margin: 0px 100px;
+}
+
+#case_intro {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+#case_intro_flex {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+#site_old {
+    height: 30vw;
+    width: auto;
+    margin-left: 75px;
+}
+
+
+/* Goals */
+
+#goals_header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#goals_header ul {
+    margin-left: 200px;
+    font-family:monospace;
+}
+
+li {
+    margin: 10px;
+    font-size: 18px;
+}
+
+
+#picture_bar {
+    height: 75px;
+    width: 75vw;
+    margin: 25px auto;
+    background-image: url('/static/white-paper-with-grid-line-pattern-background-close-up_64749-1498.jpg');
+    background-position: cover;
+}
+
+#design_mockup h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#design_mockup p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+#figma {
+    width: 75vw;
+    height: auto;
+    margin: 0px auto;
+    border-radius: 20px;
+}
+
+/* Conclusion */
+
+#conclusion {
+    margin-top: 50px;
+}
+
+#conclusion_flex {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 75px;
+}
+
+#final_mock {
+    height: 25vw;
+    width: auto;
+}
+
+#conclusion_flex p {
+    margin: 25px;
+    font-size: 20px;
+}
+
+
