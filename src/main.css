@@ -227,7 +227,6 @@
         a:hover {
             text-decoration: none;
             color: rgb(123,255,126);
-            border-bottom: 3px solid white;
             transition: 0.3s;
         }
 
@@ -439,7 +438,7 @@
 #bio {
     width: 100%;
     font-family: 'Source sans pro', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: rgb(255,255,255,.8)
 }
 
@@ -530,169 +529,126 @@ h2 {
     justify-content: space-around;
 }
 
-#productmodel_pic {
-    height:20vw;
-    width: auto;
-    margin-right: 50px;
-    margin-top: 20px;
+#project_tiles {
+    margin: 50px 100px;
 }
 
-#three_js_pic {
-    height: 20vw;
-    width: auto;
-    margin-top: 40px;
-    margin-left: 75px;
+.tile_flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content:space-evenly;
 }
 
-#three_js_demo {
-    flex-direction: row-reverse;
-    text-align: right;
-    margin-bottom: 50px;
-}
-
-#UXCase1 {
-    flex-direction: row-reverse;
-    text-align: right;
-    margin-top: 25px;
-    margin-bottom: 50px;
-}
-
-#todolist {
-    margin-bottom: 50px;
-}
-
-#tea_cozy_pic {
-    margin-left: 75px;
-    height: 20vw;
-    width: auto;
-}
-
-/* #wtf {
-    flex-direction: row;
-    text-align: left;
-    align-items: right;
-}
-*/ 
-#weather {
-    flex-direction: row-reverse;
-    text-align: right;
-}
-
-.projectinfo {
+.project_tile {
     display: flex;
     flex-direction: column;
-    color: white;
-    font-family: 'Source sans pro', sans-serif;
-    margin-left: 30px;
-    justify-content: space-around;
+    align-items: center;
+    margin: 0px 10px 50px 10px;
 }
 
-.projectmockup_img {
-    height: 25vw;
-    width: auto;
+.tile_sub_container {
+    height: 23vw;
+    width: 34vw;
+    border-radius: 10px;
+    transition: ease-out 200ms;
+    outline: 1px solid white;
 }
 
-.projectmockup_img2 {
-    height: 30vw;
-    width: auto;
-} 
-
-h4 {
-    font-size: 26px;
-    margin-bottom: 10px;
-}
-
-.projectinfo p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-button {
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: rgba(22,22,22,0.3);
-    font-family: 'Source sans pro', sans-serif;
-    font-size: 18px;
-    outline: none;
-    border: 1px solid rgb(74, 255, 77);
-    width: 125px
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: rgba(74, 255, 77, 0.2);
-}
-
-@media screen and (max-width: 1000px) {
-    .projectcontainer {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        margin-top: 50px;
-    }
-
-    #three_js_demo {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    #three_js_demo_info {
-        text-align: center;
-    }
-
-    #productmodel_pic {
-        height: 30vw;
-        overflow: hidden;
-        width: auto;
-        margin: 0 auto;
-    }
-
-    #three_js_pic {
-        height: 30vw;
-        overflow: hidden;
-        width: auto;
-        margin: 0 auto;
-    }
-
-    #wtf {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    #UXCase1 {
-        flex-direction: column;
-    }
-
-    #tea_cozy_pic {
-        margin: 0 auto;
-        height: 30vw;
-    }
-
-
-    #weather {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .projectmockup_img {
+@media screen and (max-width: 900px) {
+    .tile_sub_container {
         height: 40vw;
-        overflow: hidden;
-        width: auto;
-        margin: 0 auto;
-        transform: translateX(10px);
-    }
-    
-    .projectmockup_img2 {
-        height: 50vw;
-        overflow: hidden;
-        margin: 0 auto;
-        transform: translateX(10px);
+        width: 60vw;
+        border-radius: 10px;
+        transition: ease-out 200ms;
+        outline: 1px solid white;
     }
 }
+
+    #proj1_sub {
+        background-image: url('https://live.staticflickr.com/65535/52372147315_d90ccb5d3f_c.jpg');
+        background-size: cover;
+    }
+
+    #proj2_sub {
+        background-image: url('/static/Screen\ Shot\ 2022-10-13\ at\ 11.41.48\ AM.png');
+        background-size: cover;
+    }
+
+    #proj3_sub {
+        background-image: url('https://ucarecdn.com/16547670-2921-4d8d-9fed-53cc2c6f070b/-/preview/-/quality/smart/');
+        background-size: cover;
+        background-position-y: -25px;
+    }
+
+    #proj4_sub {
+        background-image: url('/static/weather_shot.png');
+        background-size: cover;
+    }
+
+    #proj5_sub {
+        background-image: url('/static/teacozy.png');
+        background-size: cover;
+    }
+
+    #proj6_sub {
+        background-image: url('/static/stowcode_screenshot.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 10px;
+    }
+
+.proj_description {
+    color: white;
+    z-index: 8;
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Source sans pro', sans-serif;
+    font-size: 1.7vw;
+    display: none;
+    max-width: 30vw;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .proj_description {
+        margin-top: 10px;
+        font-size:3vw;
+        max-width: 55vw;
+    }
+}
+
+.tile_anchor {
+    display: block;
+    z-index: 12;
+    height: 100%;
+    width: 100%;
+}
+
+.block {
+    display: block;
+}
+
+.tile_sub_container:hover {
+    scale: 102%;
+    transition: ease-in 200ms;
+    filter:opacity(15%);
+    cursor: pointer;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+}
+
+.project_name {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Source sans pro', sans-serif;
+}
+
+
+
 
 /* Store */
 
@@ -878,6 +834,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 9;
 }
 
 footer h4 {
