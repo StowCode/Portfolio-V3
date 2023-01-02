@@ -160,7 +160,7 @@ function mobileLinkClick() {
 }
 
 // Intersection Observer 1
-    const options = {
+/*     const options = {
         root: null,
         rootMargin: '0px',
         threshold: 0
@@ -193,7 +193,7 @@ observer.observe(wtf);
 observer.observe(portfolio);
 observer.observe(weather);
 observer.observe(todo);
-observer.observe(three_js)
+observer.observe(three_js) */
 
 /* parallax mouse move */
 
@@ -211,7 +211,7 @@ function parallax(e){
 
 /* parallax scroll effects */
 
-const geo1 = document.getElementById('geo1');
+/* const geo1 = document.getElementById('geo1');
 const geo2 = document.getElementById('geo2');
 const geo3 = document.getElementById('geo3');
 const geo4 = document.getElementById('geo4');
@@ -227,4 +227,4 @@ window.addEventListener('scroll', function(){
 
 
 })
-
+ */

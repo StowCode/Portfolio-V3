@@ -550,9 +550,9 @@ h2 {
 .tile_sub_container {
     height: 23vw;
     width: 34vw;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: ease-out 200ms;
-    outline: 1px solid white;
+    outline: 1px solid rgb(103, 103, 103);
 }
 
 @media screen and (max-width: 900px) {
@@ -599,6 +599,7 @@ h2 {
     }
 
 .proj_description {
+    opacity: 0;
     color: white;
     z-index: 8;
     position: absolute;
@@ -606,9 +607,14 @@ h2 {
     margin-top: 100px;
     font-family: 'Source sans pro', sans-serif;
     font-size: 1.7vw;
-    display: none;
     max-width: 30vw;
     cursor: pointer;
+    transition: ease-in 100ms;
+    pointer-events: none;
+}
+
+.project_tile:hover .proj_description {
+    opacity: 1;
 }
 
 @media screen and (max-width: 900px) {
@@ -632,7 +638,7 @@ h2 {
 
 .tile_sub_container:hover {
     scale: 102%;
-    transition: ease-in 200ms;
+    transition: ease-in 100ms;
     filter:opacity(15%);
     cursor: pointer;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
