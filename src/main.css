@@ -582,8 +582,9 @@ h2 {
     }
 
     #proj4_sub {
-        background-image: url('/static/weather_shot.png');
+        background-image: url('https://live.staticflickr.com/65535/52645253893_36f4878bd9_k.jpg');
         background-size: cover;
+        background-position:center;
     }
 
     #proj5_sub {
