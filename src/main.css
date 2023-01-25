@@ -482,20 +482,73 @@ h2 {
 #skills {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 25px;
+    margin-left: 25px;
+    margin-top: 5px;
 }
 
 .skillbutton {
-    background-color: rgba(0,0,0,.6);
+/*     background-color: rgba(255,255,255,.1);
+    border: 1px solid rgba(74, 255, 77, 1);
     border-radius: 5px;
     padding: 10px 20px;
-    margin-right: 20px;
-    margin-top: 10px;
     font-family: Arial;
     font-size: 16px;
-    color: white;
+    color: black;
     font-family: arial;
-    text-align: center;
+    text-align: center; */
+
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+@keyframes btn1_anim {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        /* transform: translateY(-5px); */
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        /* transform: translateY(-5px); */
+    }
+    80% {
+        transform: translateY(2px);
+    }
+    100% {
+        /* transform: translateY(0px); */
+    }
+}
+
+#html_btn {
+    animation: 3s btn1_anim infinite ease-in-out;
+}
+
+#css_btn {
+    animation: 3s btn1_anim infinite ease-in-out;
+    animation-delay: 250ms;
+}
+
+#javascript_btn {
+    animation: 3s btn1_anim infinite ease-in-out;
+    animation-delay: 500ms;
+}
+
+#react_btn {
+    animation: 3s btn1_anim infinite ease-in-out;
+    animation-delay: 750ms;
+}
+
+#threejs_btn {
+    animation: 3s btn1_anim infinite ease-in-out;
+    animation-delay: 1000ms;
+}
+
+#figma_btn {
+    animation: 3s btn1_anim infinite ease-in-out;
+    animation-delay: 1250ms;
 }
 
 @media screen and (max-width: 800px) {
