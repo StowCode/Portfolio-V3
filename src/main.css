@@ -619,7 +619,7 @@ h2 {
 }
 
     #proj1_sub {
-        background-image: url('https://live.staticflickr.com/65535/52372147315_d90ccb5d3f_c.jpg');
+        background-image: url('/static//bitcoin-screenshot.jpg');
         background-size: cover;
     }
 
@@ -641,7 +641,7 @@ h2 {
     }
 
     #proj5_sub {
-        background-image: url('/static/teacozy.png');
+        background-image: url('https://live.staticflickr.com/65535/52372147315_d90ccb5d3f_c.jpg');
         background-size: cover;
     }
 
@@ -802,17 +802,14 @@ h2 {
 }
 
 #emailbutton {
+    font-weight: 500;
     padding: 0px 5px;
-    width: 100px;
-    background: none;
-    border: 1px rgb(74, 255, 77) solid;
-    border-radius: 3px;
-    color: black;
+    color: white;
 }
 
 #emailbutton:hover {
     cursor: pointer;
-    background-color: rgba(74, 255, 77, 0.2);
+    color:rgb(74, 255, 77);
 }
 
 /* Form */
