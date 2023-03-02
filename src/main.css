@@ -619,39 +619,38 @@ h2 {
     }
 }
 
-    #proj1_sub {
+    #arch_sub {
+        background-image: url('/static/Arch\ Studios\ Screenshot.jpg');
+        background-size: cover;
+    }
+
+    #bitcoin_sub {
         background-image: url('/static//bitcoin-screenshot.jpg');
         background-size: cover;
     }
 
-    #proj2_sub {
+    #sneaker_sub {
         background-image: url('/static/sneakers-screenshot.jpg');
         background-size: cover;
     }
 
-    #proj3_sub {
+    #wtf_sub {
         background-image: url('https://ucarecdn.com/16547670-2921-4d8d-9fed-53cc2c6f070b/-/preview/-/quality/smart/');
         background-size: cover;
         background-position-y: -25px;
     }
 
-    #proj4_sub {
+    #robot_sub {
         background-image: url('https://live.staticflickr.com/65535/52645253893_36f4878bd9_k.jpg');
         background-size: cover;
         background-position:center;
     }
 
-    #proj5_sub {
+    #three_sub {
         background-image: url('https://live.staticflickr.com/65535/52372147315_d90ccb5d3f_c.jpg');
         background-size: cover;
     }
 
-    #proj6_sub {
-        background-image: url('/static/stowcode_screenshot.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position-y: 10px;
-    }
 
 .proj_description {
     opacity: 0;
