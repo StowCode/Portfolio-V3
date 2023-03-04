@@ -180,7 +180,7 @@
 }
 
 #email:hover {
-    font-size: 16px;
+    color: white;
 }
 
 .righticons {
@@ -658,7 +658,7 @@ h2 {
     z-index: 8;
     position: absolute;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 5vw;
     font-family: 'Source sans pro', sans-serif;
     font-size: 1.7vw;
     max-width: 30vw;
@@ -671,9 +671,13 @@ h2 {
     opacity: 1;
 }
 
+.project_tile:hover .project_name {
+    opacity: 1;
+}
+
 @media screen and (max-width: 900px) {
     .proj_description {
-        margin-top: 10px;
+        margin-top: 10vw;
         font-size:3vw;
         max-width: 55vw;
     }
@@ -703,74 +707,20 @@ h2 {
 .project_name {
     color: white;
     margin-bottom: 5px;
-    font-size: 20px;
+    margin-top: 2vw;
+    font-size: 2vw;
     font-family: 'Source sans pro', sans-serif;
-}
-
-
-
-
-/* Store */
-
-#store_container {
-    height: 450px;
-    background-color: rgb(78, 78, 78);
-    z-index: 2;
-    position: relative;
-}
-
-#slant1 {
-    height: 300px;
-    width: 100vw;
-    background-color: rgb(78, 78, 78);
-    transform: skewY(-10deg) translateY(-100px);
+    pointer-events: none;
     position: absolute;
-    z-index: 1;
+    opacity: 0;
 }
 
-#slant2 {
-    height: 300px;
-    width: 100vw;
-    background-color: rgb(78, 78, 78);
-    transform: skewY(-10deg) translateY(-200px);
-    position: absolute;
-    z-index: 1;
+@media screen and (max-width: 900px) {
+    .project_name {
+        font-size: 4vw;
+    }
 }
 
-#store_container h3 {
-    font-family: 'Vujahday Script', sans-serif;
-    font-size: 50px;
-    text-align: left;
-    color: white;
-    margin-left: 125px;
-    width: 750px;
-}
-
-#store_container p {
-    color: rgba(0,0,0,.9);
-    font-family: 'Source sans pro', sans-serif;
-    text-align: left;
-    margin-left: 150px;
-}
-
-#product_carousel {
-    padding: 50px;
-    margin: 0px 60px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.product_tile {
-    height: 300px;
-    width: 275px;
-    overflow: hidden;
-    background-color: red;
-}
-
-.product_image {
-    height: 250px;
-    width: auto;
-}
 
 /* Get in Touch */
 
